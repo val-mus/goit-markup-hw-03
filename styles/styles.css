@@ -27,6 +27,9 @@ img {
     max-width: 100%; 
     height: auto;
 }
+address {
+    font-style: normal;
+}
 
 .section {
     padding-top: 94px;
@@ -56,6 +59,7 @@ img {
     font-weight: 500;
     letter-spacing: 0.02em;
     color: inherit;
+    padding: 32px 0;
 }
 .visually-hidden {
   position: absolute;
@@ -84,8 +88,7 @@ img {
 
 /* Header styles */
 .header{ 
-    background-color: var(--prime-bg-color);
-    border: #ECECEC 1px solid;
+    border-bottom: #ECECEC 1px solid;
 }
 .header .flex {
     align-items: center;
@@ -128,7 +131,7 @@ img {
     color: var(--secondary-txt-color);
 }
 .hero{
-    padding: 200px 452px;
+    padding: 200px;
     background-color: var(--footer-bg-color);
     text-align: center;
     }
@@ -150,19 +153,19 @@ img {
     padding: 10px 32px;
     
     background: var(--focus-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-
     text-align: center;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+    color: var(--prime-bg-color);
+
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 
     cursor: pointer;
-    
-    color: var(--prime-bg-color);
 }
 
 .prime-btn:hover, .prime-btn:focus {
@@ -203,14 +206,16 @@ img {
 }
 .employee-card{
     background-color: var(--prime-bg-color);
-    text-align: center;
-    padding-bottom: 30px;
+    text-align: center; 
     margin-right: 30px;
-}
-.employee-card img{
-    margin-bottom: 30px;
-}
 
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.sign{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .team-title{
     margin-bottom: 10px;
 
@@ -248,14 +253,16 @@ img {
     color: var(--prime-bg-color);
 
 }
-.footer .contact{
+.footer-contact{
+  
+    letter-spacing: 0.02em;
     font-weight: inherit;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
 
 }   
-.footer .contact:hover,
-.contact:focus {
+.footer-contact:hover,
+.footer-contact:focus {
     color: var(--focus-color);
 }
 /* STYLES FOR PORTFOLIO */
@@ -269,6 +276,8 @@ img {
     margin-right: 8px;
 }
 .secondary-btn{
+    padding: 6px 22px;
+
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -279,20 +288,20 @@ img {
     color: var(--secondary-txt-color);
     background: var(--third-bg-color);
     border-radius: 4px;
-    border-color: transparent;
+    border: none;
+   
     
     cursor: pointer;
 }
-.secondary-btn:hover, .secondary-btn:focus{
+.secondary-btn:hover, 
+.secondary-btn:focus{
     color: var(--prime-bg-color);
-    background: #2196F3;
+    background: var(--focus-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    border-color: transparent;
+    border-radius: 4px;   
 }
 .cards {
     flex-wrap: wrap;
-  
 }
 .border{
     padding-top: 20px;
@@ -301,6 +310,7 @@ img {
     padding-left: 24px;
 
     border: 1px solid #EEEEEE;
+    border-top: none;
 }
 .complete-card{
     margin-right: 30px;
